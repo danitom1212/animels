@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animel4u</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+        
+        header {
+            background: linear-gradient(45deg, #ffcc00, #ff6600);
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        
+        .navbar {
+            background-color: #ffcc00;
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        .navbar-nav .nav-link {
+            color: #fff;
+            font-weight: bold;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: #ff6600;
+        }
+        
+        h1,
+        h2 {
+            text-shadow: 1px 1px 2px #000000;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+        
+        .card-img-top {
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .card-img-top:hover {
+            transform: scale(1.1);
+        }
+        
+        #cats,
+        #dogs,
+        #birds,
+        #about {
+            padding: 50px 0;
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        #cats {
+            background-color: #ffe6e6;
+        }
+        
+        #dogs {
+            background-color: #e6ffe6;
+        }
+        
+        #birds {
+            background-color: #e6f7ff;
+        }
+        
+        #about {
+            background-color: #f9e6ff;
+        }
+        
+        #description,
+        #gallery,
+        #about {
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .nav-link {
+            cursor: pointer;
+        }
+        
+        footer {
+            background-color: #ffcc00;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Toolbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Animel4u</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">בית</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cats">חתולים</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#dogs">כלבים</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#birds">תוכים</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">אודות</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="text-center py-5" id="home">
+        <h1 class="display-4">Animel4u</h1>
+    </header>
+
+    <main class="container mt-5">
+        <section id="cats" class="mt-5">
+            <h2 class="text-center mb-4">חתולים</h2>
+            <p class="text-center">החתול הוא יונק קטן ממשפחת החתוליים, הוא בעל פרווה רכה ונעימה וידוע בהיותו בעל חיים עצמאי ואינטליגנטי. החתולים נפוצים ברחבי העולם ומשמשים כחיות מחמד נאמנות וחמודות.</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://conservationcubclub.com/wp-content/uploads/2023/12/Maine-Coon-Cat-Hero.jpeg" class="card-img-top" alt="חתול 1">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAOnLXSaPbc4K0IId0dSTI050OfwusYAyfQzMiCF6mrwNPVdmN" class="card-img-top" alt="חתול 2">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/01/6f/72/016f72c5812e1b8f71bdbf19d8c7558b.jpg" class="card-img-top" alt="חתול 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dogs" class="mt-5">
+            <h2 class="text-center mb-4">כלבים</h2>
+            <p class="text-center">הכלב הוא יונק ממשפחת הכלביים, הוא בעל פרווה מגוונת וידוע בהיותו חברו הטוב ביותר של האדם. הכלבים משמשים ככלבי שמירה, עבודה, נחייה וכחיות מחמד אהובות.</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://placedog.net/300/200" class="card-img-top" alt="כלב 1">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://placedog.net/301/200" class="card-img-top" alt="כלב 2">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://placedog.net/302/200" class="card-img-top" alt="כלב 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="birds" class="mt-5">
+            <h2 class="text-center mb-4">תוכים</h2>
+            <p class="text-center">התוכי הוא ציפור צבעונית וחכמה ממשפחת התוכיים, הם ידועים ביכולת לחקות קולות ובשיחתם החברתית. תוכים נפוצים כחיות מחמד חכמות ומשעשעות ברחבי העולם.</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnFs1ypu9Iocl7bDIb0HqhGKW5peOVg0gM8Q&s" class="card-img-top" alt="תוכי 1">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRguAAj2cIDtAEkgAIHaqfzxrpccGSblYqK_A&s" class="card-img-top" alt="תוכי 2">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://dalicanvas.co.il/wp-content/uploads/2022/10/%D7%98%D7%95%D7%A7%D7%99-%D7%A1%D7%A1%D7%92%D7%95%D7%A0%D7%992.jpg" class="card-img-top" alt="תוכי 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="mt-5">
+            <h2 class="text-center mb-4">אודות</h2>
+            <p class="text-center">האתר Animel4u נבנה כדי לספק מידע על בעלי חיים מדהימים שמלווים אותנו לאורך ההיסטוריה. כאן תמצאו מידע מעניין ותמונות מקסימות של חתולים, כלבים ותוכים מכל רחבי העולם.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Animel4u. כל הזכויות שמורות.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.
